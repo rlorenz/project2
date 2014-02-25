@@ -7,4 +7,7 @@ class HomeController < ApplicationController
 
   def blog
   end
+    
+  def homepage
+  end
 end

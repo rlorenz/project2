@@ -1,7 +1,12 @@
 Project2::Application.routes.draw do
-  get "home/faq"
-  get "home/about"
-  get "home/blog"
+    
+  root to: 'home#homepage'
+    
+  get '/faq', to: 'home#faq'
+  get '/about', to: 'home#about'
+  get '/blog', to: 'home#blog'
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
